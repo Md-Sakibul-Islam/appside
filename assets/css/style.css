@@ -1,0 +1,78 @@
+ /* google fonts link start  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600;700;800&display=swap');
+ /* google fonts link end  */
+
+/* Global css start  */
+:root {
+    --main-blue: #500ade;
+    --main-violet: #852aff;
+    --dark-gray: #333333;
+    --dark-indigo: #1c144e;
+    --text-color: #666666;
+    --heading-font:"Poppins", system-ui;;
+    --text-font:"Sen", sans-serif;
+    
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 22px;
+}
+
+h6 {
+    font-size: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+body{
+    font-family: var(--text-font);
+    color: var(--text-color);
+    font-weight: 400;
+}
+/* Global css end  */
