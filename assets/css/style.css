@@ -1,78 +1,196 @@
  /* google fonts link start  */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600;700;800&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600;700;800&display=swap');
  /* google fonts link end  */
 
-/* Global css start  */
-:root {
-    --main-blue: #500ade;
-    --main-violet: #852aff;
-    --dark-gray: #333333;
-    --dark-indigo: #1c144e;
-    --text-color: #666666;
-    --heading-font:"Poppins", system-ui;;
-    --text-font:"Sen", sans-serif;
-    
+ /* Global css start  */
+ :root {
+     --main-blue: #500ade;
+     --main-violet: #852aff;
+     --dark-gray: #333333;
+     --dark-indigo: #1c144e;
+     --light-gray: rgba(255, 255, 255, 0.8);
+     --white: #fff;
+     --text-color: #666666;
+     --heading-font: "Poppins", system-ui;
+     ;
+     --primary-gradient:linear-gradient(50deg, #5e2ced 0%, #9749f8 100%);
+     --text-font: "Sen", sans-serif;
+     
 
-}
 
-* {
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ h1 {
+     font-size: 60px;
+ }
+
+ h2 {
+     font-size: 48px;
+ }
+
+ h3 {
+     font-size: 40px;
+ }
+
+ h4 {
+     font-size: 24px;
+ }
+
+ h5 {
+     font-size: 22px;
+ }
+
+ h6 {
+     font-size: 20px;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+    font-family: var(--heading-font);
+     margin: 0;
+     padding: 0;
+ }
+ p{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
+ }
 
-h1 {
-    font-size: 60px;
-}
+ a {
+     text-decoration: none;
+ }
 
-h2 {
-    font-size: 48px;
-}
+ ol,
+ ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+ }
 
-h3 {
-    font-size: 40px;
-}
+ img {
+     max-width: 100%;
+     vertical-align: middle;
+ }
 
-h4 {
-    font-size: 24px;
-}
+ .template-btn {
+     display: inline-block;
+     font-size: 16px;
+     font-weight: 600;
+     font-family: var(--heading-font);
+     color: var(--white);
+     background-color: var(--main-blue);
+     padding: 15px 50px;
+     border-radius: 30px;
+     transition: all 0.3s;
 
-h5 {
-    font-size: 22px;
-}
 
-h6 {
-    font-size: 20px;
-}
+ }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin: 0;
-    padding: 0;
-}
+ body {
+     font-family: var(--text-font);
+     color: var(--text-color);
+     font-weight: 400;
+ }
 
-a {
-    text-decoration: none;
-}
+ /* Global css end  */
 
-ol,
-ul {
-    margin: 0;
-    padding: 0;
-}
+ /* header area css start  */
+ .header-area {
+    position: relative;
+    z-index: 1;
 
-img {
+ }
+
+ .header-area .navbar-nav {}
+
+ .header-area .navbar-nav .nav-item {}
+
+ .header-area .navbar-nav .nav-item a {
+     padding: 0 15px !important;
+     color: var(--light-gray);
+     font-size: 16px;
+     font-weight: 600;
+ }
+
+ .header-area .download-area li {
+     margin-left: 30px;
+ }
+
+ .header-area .download-area li a:hover {
+     background-color: var(--dark-gray);
+ }
+
+ .header-area .navbar-nav .nav-item a:hover {
+     color: var(--white);
+ }
+
+ /* header area css end  */
+
+ /* hero area css start  */
+
+ .hero-area{
+    padding: 150px 0 110px 0;
+    top: 0;
+    left: 0;
+    position: absolute;
     width: 100%;
-}
-body{
-    font-family: var(--text-font);
-    color: var(--text-color);
-    font-weight: 400;
-}
-/* Global css end  */
+    background: url(../images/hero-img/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 100%  85%;
+
+ }
+
+ .hero-area .hero-content{
+
+ }
+ .hero-area .hero-content .hero-heading{
+    max-width: 635px;
+    color: var(--white);
+    font-weight: 700;
+ }
+ .hero-area .hero-content .hero-paragraph{
+    margin: 22px 0 35px 0;
+    max-width: 490px;
+    font-size: 20px;
+    color: var(--white);
+
+ }
+ .hero-area .hero-content .hero-button-group{}
+ .hero-area .hero-content .hero-button-group .download-btn{
+    background: var(--primary-gradient);
+    color: var(--dark-indigo);
+    border: 2px solid var(--white);
+    color: var(--white);
+    transition:  all 0.3s;
+ }
+ .hero-area .hero-content .hero-button-group .download-btn:hover{
+    background: var(--white);
+    color: var(--dark-gray);
+    border: 2px solid transparent;
+ }
+ .hero-area .hero-content .hero-button-group .learn-btn{
+    margin-left: 24px;
+    background-color: var(--white);
+    color: var(--dark-indigo);
+    border: 2px solid transparent;
+    transition: all 0.3s;
+ }
+ .hero-area .hero-content .hero-button-group .learn-btn:hover{
+    background: var(--primary-gradient);
+    color: var(--white);
+    border: 2px solid var(--white);
+
+ }
+
+  /* hero area css end  */
